@@ -1,0 +1,173 @@
+---
+// src/pages/servicios.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Servicios de Electricidad - Instalaciones, Averías y Mantenimiento en [Tu Ciudad]">
+
+  <section class="w-full bg-white pt-16 pb-12 md:pt-24 md:pb-16 dark:bg-gray-900">
+    <div class="container mx-auto max-w-screen-xl px-6">
+      <div class="mx-auto max-w-3xl text-center">
+        <h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
+          Soluciones Eléctricas para tu Hogar y Negocio
+        </h1>
+        <p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">
+          Desde una instalación completa con garantía hasta la reparación de una avería urgente 24h. Aquí encontrarás un servicio profesional, autorizado y de confianza.
+        </p>
+      </div>
+
+      <div class="mx-auto mt-12 max-w-2xl rounded-lg border-l-4 border-yellow-400 bg-yellow-50 p-6 shadow-lg md:p-8 dark:bg-gray-800 dark:border-yellow-300">
+        <div class="flex flex-col items-center gap-6 sm:flex-row">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-16 w-16 flex-shrink-0 text-yellow-500">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+          </svg>
+          <div class="flex-grow text-center sm:text-left">
+            <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">¿Tienes una Urgencia?</h2>
+            <p class="mt-2 text-lg text-gray-700 dark:text-gray-300">No esperes. Llama ahora o envía un WhatsApp para una atención inmediata.</p>
+          </div>
+          <div class="flex flex-shrink-0 flex-col gap-4">
+            <a href="tel:TU-NUMERO" class="flex transform items-center justify-center rounded-md bg-yellow-400 px-6 py-3 font-semibold text-gray-900 shadow-md transition-transform hover:scale-105">Llamar Ahora</a>
+            <a href="https://wa.me/TUNUMERO" class="flex transform items-center justify-center rounded-md bg-emerald-500 px-6 py-3 font-semibold text-white shadow-md transition-transform hover:scale-105">Enviar WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="instalaciones" class="w-full scroll-mt-20 bg-gray-50 py-16 md:py-24 dark:bg-gray-800">
+    <div class="container mx-auto max-w-screen-xl px-6">
+      <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+        <div>
+          <img src="https://via.placeholder.com/600x400.png?text=Foto+Instalación+Moderna" alt="Instalación de cuadro eléctrico moderno" class="w-full rounded-2xl object-cover shadow-2xl">
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+            Instalaciones Eléctricas
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+            Una instalación eléctrica segura y eficiente es la base de tu tranquilidad. Realizo instalaciones completas en obra nueva, reformas y ampliaciones, siempre cumpliendo la normativa (REBT) y usando materiales de primeras marcas.
+          </p>
+          <ul class="mt-8 space-y-3 text-lg text-gray-600 dark:text-gray-300">
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Instalación de cuadros eléctricos
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Nuevos puntos de luz y enchufes
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Iluminación LED (interior y exterior)
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Boletines eléctricos (Certificados)
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Instalación de cargadores para vehículo eléctrico
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="reparaciones" class="w-full scroll-mt-20 bg-white py-16 md:py-24 dark:bg-gray-900">
+    <div class="container mx-auto max-w-screen-xl px-6">
+      <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+        <div class="md:order-last">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+            Reparación de Averías Urgentes
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+            Un apagón o un enchufe echando humo no puede esperar. Entiendo la urgencia y ofrezco un servicio rápido 24/7 para diagnosticar y solucionar cualquier avería, devolviendo la seguridad a tu hogar o negocio.
+          </p>
+          <ul class="mt-8 space-y-3 text-lg text-gray-600 dark:text-gray-300">
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Apagones y cortocircuitos
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Saltos del diferencial (ICP)
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Enchufes que no funcionan o se queman
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Reparación de timbres y porteros automáticos
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Solución a olores de cable quemado
+            </li>
+          </ul>
+        </div>
+        <div class="md:order-first">
+          <img src="https://via.placeholder.com/600x400.png?text=Foto+Reparación+Urgente" alt="Electricista reparando avería urgente" class="w-full rounded-2xl object-cover shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="mantenimiento" class="w-full scroll-mt-20 bg-gray-50 py-16 md:py-24 dark:bg-gray-800">
+    <div class="container mx-auto max-w-screen-xl px-6">
+      <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+        <div>
+          <img src="https://via.placeholder.com/600x400.png?text=Foto+Mantenimiento+Preventivo" alt="Revisión de instalación eléctrica" class="w-full rounded-2xl object-cover shadow-2xl">
+        </div>
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+            Mantenimiento Eléctrico Preventivo
+          </h2>
+          <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+            La mejor avería es la que nunca ocurre. Un mantenimiento preventivo es la forma más inteligente de ahorrar dinero y evitar sustos, especialmente en instalaciones antiguas, comunidades de vecinos o negocios.
+          </p>
+          <ul class="mt-8 space-y-3 text-lg text-gray-600 dark:text-gray-300">
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Revisión y apriete de cuadros eléctricos
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Planes preventivos para negocios y comunidades
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Revisión de instalaciones antiguas (adaptación a normativa)
+            </li>
+            <li class="flex items-start">
+              <svg class="mr-3 h-6 w-6 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+              Medición de consumos y optimización
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full bg-white py-16 md:py-24 dark:bg-gray-900">
+    <div class="container mx-auto max-w-screen-xl px-6">
+      <div class="mx-auto max-w-3xl text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto h-12 w-12 text-blue-600">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+        </svg>
+        <h2 class="mt-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          Mi Zona de Actuación
+        </h2>
+        <p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">
+          Doy servicio en **[Tu Ciudad]** y alrededores, con rapidez y cercanía. Mi base está en **[Tu Barrio/Zona]**, pero me desplazo a:
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-lg text-gray-500 dark:text-gray-400">
+          <span>Tolosa</span>
+          <span>Donosti</span>
+          <span>Andoain</span>
+          <span>Villabona</span>
+          <span>>Anoeta</span>
+          <span>Beasain</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  </Layout>

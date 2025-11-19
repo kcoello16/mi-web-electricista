@@ -1,0 +1,112 @@
+---
+// src/pages/sobre-mi.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Sobre Mí - Electricista Autorizado en [Tu Ciudad]">
+
+  <section class="w-full bg-white py-16 md:py-24 dark:bg-gray-900">
+    <div class="container mx-auto max-w-screen-xl px-6">
+      <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+        
+        <div>
+          <img
+            src="/images/tu-foto-perfil.jpg" 
+            alt="Foto profesional de [Tu Nombre], electricista"
+            class="w-full rounded-2xl object-cover shadow-2xl"
+          />
+        </div>
+        
+        <div class="text-center md:text-left">
+          <h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+            Hola, soy 
+            <span class="text-emerald-500">Allan Burgos</span>
+          </h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+            Con más de 5 años de experiencia, decidí establecerme como autónomo para ofrecer el servicio cercano, honesto y de calidad que creo que todo cliente merece.
+          </p>
+          <p class="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-300">
+            Mi prioridad no es solo arreglar un enchufe o solucionar una avería; es darte la **tranquilidad** y la **seguridad** de que tu instalación eléctrica funciona perfectamente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full bg-gray-50 py-16 md:py-24 dark:bg-gray-800">
+    <div class="container mx-auto max-w-screen-xl px-6">
+      <div class="mx-auto mb-12 max-w-xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          Confianza y Profesionalidad
+        </h2>
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+          Tu seguridad no es negociable. Por eso trabajo con las máximas garantías.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        
+        <div class="rounded-lg bg-white p-8 text-center shadow-lg dark:bg-gray-700">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto h-12 w-12 text-emerald-500">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.956 11.956 0 0 1 12 3c1.97 0 3.824.238 5.5.658m-7.5 0A11.956 11.956 0 0 0 12 3c-1.97 0-3.824.238-5.5.658m7.5 0A11.956 11.956 0 0 1 12 21c-1.97 0-3.824-.238-5.5-.658m7.5 0A11.956 11.956 0 0 0 12 21c1.97 0 3.824-.238 5.5-.658m-7.5 0A11.956 11.956 0 0 1 12 3c1.97 0 3.824.238 5.5.658" />
+          </svg>
+          <h3 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">Electricista Autorizado</h3>
+          <p class="mt-2 text-base text-gray-600 dark:text-gray-300">Nº de Carnet: [Tu Nº de Carnet]</p>
+        </div>
+        
+        <div class="rounded-lg bg-white p-8 text-center shadow-lg dark:bg-gray-700">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto h-12 w-12 text-yellow-400">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          <h3 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">Garantía en Reparaciones</h3>
+          <p class="mt-2 text-base text-gray-600 dark:text-gray-300">Todas mis instalaciones y reparaciones están garantizadas.</p>
+        </div>
+        
+        <div class="rounded-lg bg-white p-8 text-center shadow-lg dark:bg-gray-700">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mx-auto h-12 w-12 text-blue-600">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.83-5.83M11.42 15.17l.017-.017M11.42 15.17l-1.48-1.48m1.48 1.48L11.42 15.17M11.42 15.17l1.48 1.48m-1.48-1.48L11.42 15.17m5.83 5.83-5.83-5.83m0 0L11.42 15.17m-1.48 1.48L11.42 15.17m-5.83-5.83L11.42 15.17m0 0L11.42 15.17m-1.48-1.48L11.42 15.17M5.59 5.59 11.42 11.42m0 0L11.42 11.42m0 0l-5.83 5.83m5.83-5.83L11.42 11.42m0 0l5.83-5.83m-5.83 5.83L11.42 11.42m0 0l-1.48-1.48M11.42 11.42l-1.48 1.48m1.48-1.48L11.42 11.42" />
+          </svg>
+          <h3 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">Materiales de Primeras Marcas</h3>
+          <p class="mt-2 text-base text-gray-600 dark:text-gray-300">Solo uso componentes fiables que garantizan durabilidad.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <section class="w-full bg-white py-16 md:py-24 dark:bg-gray-900">
+    <div class="container mx-auto max-w-screen-xl px-6">
+      <div class="mx-auto mb-12 max-w-xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          Mi Proceso: Sencillo y Transparente
+        </h2>
+      </div>
+      
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        
+        <div class="flex flex-col items-center rounded-lg border border-gray-200 p-8 dark:border-gray-700">
+          <span class="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 text-xl font-bold text-white">1</span>
+          <h3 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Contacto</h3>
+          <p class="mt-2 text-center text-base text-gray-600 dark:text-gray-300">
+            Me llamas o escribes (WhatsApp) y me explicas tu problema o proyecto.
+          </p>
+        </div>
+        
+        <div class="flex flex-col items-center rounded-lg border border-gray-200 p-8 dark:border-gray-700">
+          <span class="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 text-xl font-bold text-white">2</span>
+          <h3 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Diagnóstico y Presupuesto</h3>
+          <p class="mt-2 text-center text-base text-gray-600 dark:text-gray-300">
+            Te doy un presupuesto claro o acudo (si es urgente) para diagnosticar la avería.
+          </p>
+        </div>
+        
+        <div class="flex flex-col items-center rounded-lg border border-gray-200 p-8 dark:border-gray-700">
+          <span class="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 text-xl font-bold text-white">3</span>
+          <h3 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Reparación y Garantía</h3>
+          <p class="mt-2 text-center text-base text-gray-600 dark:text-gray-300">
+            Reparo el problema de forma limpia, segura y con total garantía sobre el trabajo.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  </Layout>

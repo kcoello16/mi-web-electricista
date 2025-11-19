@@ -1,11 +1,273 @@
 ---
-import Welcome from '../components/Welcome.astro';
+// src/pages/index.astro
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<Layout title="Electricista en [Tolosa] - Inicio">
+
+<section class="w-full bg-white dark:bg-gray-900">
+  <div class="container mx-auto max-w-screen-xl px-6 py-16 md:py-24">
+    <div class="grid items-center gap-12 md:grid-cols-2">
+
+      <div class="text-center md:text-left">
+
+        <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white md:text-5xl">
+          Electricista Autorizado
+          <span class="block text-emerald-500 dark:text-emerald-400">[Tolosa]</span> {/* Usando el verde del colibrí */}
+        </h1>
+
+        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+          Soluciones rápidas para averías 24h, instalaciones seguras y mantenimiento. Tu tranquilidad es mi prioridad.
+        </p>
+
+        <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start">
+
+          <a
+            href="tel:643922280"
+            class="transform rounded-md bg-yellow-400 px-8 py-3 text-lg font-semibold text-gray-900 shadow-lg transition-transform duration-200 hover:scale-105 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300"
+          >
+            ⚡️ Llamar Urgencias
+          </a>
+
+          <a
+            href="httpsIA_REPLACE_ME_WHATSAPP_LINK"
+            class="transform rounded-md bg-blue-700 px-8 py-3 text-lg font-semibold text-white shadow-lg transition-transform duration-200 hover:scale-105 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700" {/* Un azul más oscuro y profundo */}
+          >
+            💬 Pedir Presupuesto (WhatsApp)
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-8 md:mt-0">
+        <img
+          src="/img/hero.jpg"
+          alt="Tu Nombre - Electricista autorizado en [Tu Ciudad]"
+          class="aspect-square w-full rounded-2xl object-cover shadow-2xl md:aspect-auto"
+          width="550"
+          height="550"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="w-full bg-gray-50 py-16 dark:bg-gray-800">
+  <div class="container mx-auto max-w-screen-xl px-6">
+    <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-4">
+      
+      <div class="flex flex-col items-center text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-emerald-500">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.956 11.956 0 0 1 12 3c1.97 0 3.824.238 5.5.658m-7.5 0A11.956 11.956 0 0 0 12 3c-1.97 0-3.824.238-5.5.658m7.5 0A11.956 11.956 0 0 1 12 21c-1.97 0-3.824-.238-5.5-.658m7.5 0A11.956 11.956 0 0 0 12 21c1.97 0 3.824-.238 5.5-.658m-7.5 0A11.956 11.956 0 0 1 12 3c1.97 0 3.824.238 5.5.658" />
+        </svg>
+        <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">Electricista Autorizado</h3>
+        <p class="mt-1 text-base text-gray-600 dark:text-gray-300">Tu seguridad es lo primero. Cumplo con toda la normativa.</p>
+      </div>
+      
+      <div class="flex flex-col items-center text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-yellow-400">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+        </svg>
+        <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">Servicio Urgente 24/7</h3>
+        <p class="mt-1 text-base text-gray-600 dark:text-gray-300">Para averías que no pueden esperar. Disponible día y noche.</p>
+      </div>
+      
+      <div class="flex flex-col items-center text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-blue-600">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm.334 0a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5ZM9.75 15.75h.008v.008H9.75v-.008Zm.334 0a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm.008 3.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0ZM8.625 18a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm.008-3.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0ZM12 15h.008v.008H12v-.008Zm.334 0a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm.008 3.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm.334 0a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c-4.386 0-8.25 3.134-8.25 7s3.864 7 8.25 7 8.25-3.134 8.25-7-3.864-7-8.25-7Z" />
+        </svg>
+        <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">Presupuesto sin Compromiso</h3>
+        <p class="mt-1 text-base text-gray-600 dark:text-gray-300">Precios claros y justos antes de empezar el trabajo.</p>
+      </div>
+      
+      <div class="flex flex-col items-center text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-emerald-500">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </svg>
+        <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">Garantía en Reparaciones</h3>
+        <p class="mt-1 text-base text-gray-600 dark:text-gray-300">Duerme tranquilo. Mi trabajo está 100% garantizado.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="w-full bg-white py-16 md:py-24 dark:bg-gray-900">
+  <div class="container mx-auto max-w-screen-xl px-6">
+    
+    <div class="mx-auto mb-12 max-w-xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+        Soluciones Eléctricas a tu Medida
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+        Desde una urgencia hasta una instalación completa. Cubro todas tus necesidades con profesionalidad y garantía.
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+      
+      <a
+        href="/servicios#instalaciones"
+        class="block rounded-lg border border-gray-200 bg-white p-8 shadow-lg transition-transform duration-300 hover:scale-105 dark:border-gray-700 dark:bg-gray-800"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-emerald-500">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+        </svg>
+        <h3 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">
+          Instalaciones Eléctricas
+        </h3>
+        <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
+          Nuevas obras, puntos de luz, cuadros eléctricos, cargadores de vehículo, boletines y más.
+        </p>
+        <span class="mt-4 inline-flex items-center font-medium text-blue-600 dark:text-blue-400">
+          Ver más
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="ml-1 h-4 w-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </span>
+      </a>
+      
+      <a
+        href="/servicios#reparaciones"
+        class="block rounded-lg border border-gray-200 bg-white p-8 shadow-lg transition-transform duration-300 hover:scale-105 dark:border-gray-700 dark:bg-gray-800"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-yellow-400">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+        </svg>
+        <h3 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">
+          Reparación de Averías
+        </h3>
+        <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
+          Apagones, cortocircuitos, enchufes quemados, saltos de diferencial. Servicio urgente 24h.
+        </p>
+        <span class="mt-4 inline-flex items-center font-medium text-blue-600 dark:text-blue-400">
+          Ver más
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="ml-1 h-4 w-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </span>
+      </a>
+      
+      <a
+        href="/servicios#mantenimiento"
+        class="block rounded-lg border border-gray-200 bg-white p-8 shadow-lg transition-transform duration-300 hover:scale-105 dark:border-gray-700 dark:bg-gray-800"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-12 w-12 text-blue-600">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+        </svg>
+        <h3 class="mt-4 text-xl font-semibold text-gray-900 dark:text-white">
+          Mantenimiento Eléctrico
+        </h3>
+        <p class="mt-2 text-base text-gray-600 dark:text-gray-300">
+          Revisiones preventivas para comunidades, negocios y hogares. Evita averías costosas.
+        </p>
+        <span class="mt-4 inline-flex items-center font-medium text-blue-600 dark:text-blue-400">
+          Ver más
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="ml-1 h-4 w-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>
+<section class="w-full bg-gray-50 py-16 md:py-24 dark:bg-gray-800">
+  <div class="container mx-auto max-w-screen-xl px-6">
+    
+    <div class="mx-auto mb-12 max-w-xl text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+        Lo que dicen mis clientes
+      </h2>
+      <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+        Mi mayor orgullo es un trabajo bien hecho y un cliente tranquilo.
+      </p>
+    </div>
+    
+    <div class="mx-auto grid max-w-lg grid-cols-1 gap-8 md:max-w-none md:grid-cols-2 lg:grid-cols-3">
+      
+      <div class="flex flex-col rounded-lg bg-white p-8 shadow-lg dark:bg-gray-700">
+        <div class="flex-grow">
+          <svg class="h-10 w-10 text-emerald-500" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 12a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-3v-3a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3v3a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1H12zM21 12a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-3v-3a1 1 0 0 0-1-1H14a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3v3a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1H21z"/>
+          </svg>
+          <blockquote class="mt-4 text-lg italic text-gray-600 dark:text-gray-300">
+            "¡Es un fenómeno! Me solucionó el apagón un domingo por la noche. Rápido, profesional y muy amable. Totalmente recomendable."
+          </blockquote>
+        </div>
+        <div class="mt-6 flex-shrink-0 border-t border-gray-200 pt-6 dark:border-gray-600">
+          <p class="text-base font-semibold text-gray-900 dark:text-white">María G.</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Zona Centro, [Tu Ciudad]</p>
+        </div>
+      </div>
+      
+      <div class="flex flex-col rounded-lg bg-white p-8 shadow-lg dark:bg-gray-700">
+        <div class="flex-grow">
+          <svg class="h-10 w-10 text-emerald-500" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 12a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-3v-3a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3v3a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1H12zM21 12a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-3v-3a1 1 0 0 0-1-1H14a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3v3a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1H21z"/>
+          </svg>
+          <blockquote class="mt-4 text-lg italic text-gray-600 dark:text-gray-300">
+            "Le llamé para cambiar toda la iluminación a LED y no puedo estar más contento. Me asesoró genial y el trabajo quedó limpio y perfecto."
+          </blockquote>
+        </div>
+        <div class="mt-6 flex-shrink-0 border-t border-gray-200 pt-6 dark:border-gray-600">
+          <p class="text-base font-semibold text-gray-900 dark:text-white">Carlos R. (Administrador)</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Comunidad de Vecinos</p>
+        </div>
+      </div>
+      
+      <div class="flex flex-col rounded-lg bg-white p-8 shadow-lg dark:bg-gray-700">
+        <div class="flex-grow">
+          <svg class="h-10 w-10 text-emerald-500" fill="currentColor" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 12a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-3v-3a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3v3a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1H12zM21 12a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-3v-3a1 1 0 0 0-1-1H14a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h3v3a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1H21z"/>
+          </svg>
+          <blockquote class="mt-4 text-lg italic text-gray-600 dark:text-gray-300">
+            "Serio, puntual y a un precio justo. Se nota que sabe lo que hace. Me instaló un cargador para el coche eléctrico y todo genial."
+          </blockquote>
+        </div>
+        <div class="mt-6 flex-shrink-0 border-t border-gray-200 pt-6 dark:border-gray-600">
+          <p class="text-base font-semibold text-gray-900 dark:text-white">Javier F.</p>
+          <p class="text-sm text-gray-500 dark:text-gray-400">Garaje Privado</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="w-full bg-gray-900 dark:bg-gray-900">
+  <div class="container mx-auto max-w-screen-xl px-6 py-16 md:py-24">
+    <div class="mx-auto max-w-3xl text-center">
+      
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        ¿Tienes una avería o un nuevo proyecto?
+      </h2>
+      
+      <p class="mt-6 text-lg leading-8 text-gray-300">
+        No esperes a que un pequeño problema se convierta en uno grande. Estoy aquí para ayudarte, ya sea una urgencia 24h o para planificar tu próxima instalación. Hablemos sin compromiso.
+      </p>
+
+      <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        
+        <a
+          href="tel:TU-NUMERO-DE-TELEFONO"
+          class="transform rounded-md bg-yellow-400 px-8 py-3 text-lg font-semibold text-gray-900 shadow-lg transition-transform duration-200 hover:scale-105 hover:bg-yellow-300 focus:outline-none focus:ring-4 focus:ring-yellow-300"
+        >
+          ⚡️ Llamar (Urgencias)
+        </a>
+
+        <a
+          href="/contacto"
+          class="transform rounded-md bg-emerald-500 px-8 py-3 text-lg font-semibold text-white shadow-lg transition-transform duration-200 hover:scale-105 hover:bg-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-300"
+        >
+          Contactar Ahora
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  </Layout> ```
+

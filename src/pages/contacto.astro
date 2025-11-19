@@ -1,0 +1,138 @@
+---
+// src/pages/contacto.astro
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contacto - Electricista en [Tu Ciudad]">
+
+  <section class="w-full bg-white py-16 md:py-24 dark:bg-gray-900">
+    <div class="container mx-auto max-w-2xl px-6 text-center">
+      
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
+        ¿Hablamos?
+      </h1>
+      <p class="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-300">
+        Si es una urgencia, no rellenes el formulario. Usa estos botones para una atención inmediata 24h.
+      </p>
+
+      <div class="mt-10 flex flex-col items-center justify-center gap-6 sm:flex-row">
+        
+        <a
+          href="tel:TU-NUMERO-DE-TELEFONO"
+          class="flex w-full transform items-center justify-center rounded-md bg-yellow-400 px-10 py-4 text-xl font-semibold text-gray-900 shadow-lg transition-transform duration-200 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-yellow-300 sm:w-auto"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="mr-3 h-7 w-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+          </svg>
+          LLAMAR (URGENCIAS)
+        </a>
+
+        <a
+          href="https://wa.me/TU-NUMERO-CON-PREFIJO-PAIS"
+          target="_blank"
+          class="flex w-full transform items-center justify-center rounded-md bg-emerald-500 px-10 py-4 text-xl font-semibold text-white shadow-lg transition-transform duration-200 hover:scale-105 hover:bg-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-300 sm:w-auto"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="mr-3 h-7 w-7" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.626-2.957 6.584-6.591 6.584m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.068-.315-.099-.449.099-.133.197-.513.646-.629.775-.116.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.118-.198-.01-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.1-.449-1.076-.612-1.47-.16-.389-.323-.335-.449-.34-.118-.007-.249-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.05-.08-.182-.133-.38-.232"/>
+          </svg>
+          ENVIAR WHATSAPP
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="w-full bg-gray-50 py-16 md:py-24 dark:bg-gray-800">
+    <div class="container mx-auto max-w-screen-xl px-6">
+      
+      <div class="mx-auto mb-12 max-w-3xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+          O Pide Presupuesto sin Compromiso
+        </h2>
+        <p class="mt-4 text-lg text-gray-600 dark:text-gray-300">
+          Para instalaciones, mantenimientos o consultas no urgentes, rellena este formulario y te responderé lo antes posible.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 gap-16 md:grid-cols-2">
+        
+        <div>
+          <form name="contacto" method="POST" data-netlify="true" class="space-y-6">
+            <input type="hidden" name="form-name" value="contacto" />
+            
+            <div>
+              <label for="name" class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white">Nombre</label>
+              <div class="mt-2.5">
+                <input type="text" name="name" id="name" autocomplete="name" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-500 sm:text-sm sm:leading-6 dark:bg-gray-700 dark:text-white dark:ring-gray-600 dark:focus:ring-emerald-400">
+              </div>
+            </div>
+            
+            <div>
+              <label for="contact-info" class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white">Teléfono o Email</label>
+              <div class="mt-2.5">
+                <input type="text" name="contact-info" id="contact-info" autocomplete="email" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-500 sm:text-sm sm:leading-6 dark:bg-gray-700 dark:text-white dark:ring-gray-600 dark:focus:ring-emerald-400">
+              </div>
+            </div>
+            
+            <div>
+              <label for="message" class="block text-sm font-semibold leading-6 text-gray-900 dark:text-white">¿En qué puedo ayudarte?</label>
+              <div class="mt-2.5">
+                <textarea name="message" id="message" rows="4" required class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-emerald-500 sm:text-sm sm:leading-6 dark:bg-gray-700 dark:text-white dark:ring-gray-600 dark:focus:ring-emerald-400"></textarea>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-x-3">
+              <input id="privacy-policy" name="privacy-policy" type="checkbox" required class="h-4 w-4 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500 dark:bg-gray-700 dark:border-gray-600">
+              <label for="privacy-policy" class="block text-sm text-gray-600 dark:text-gray-300">
+                Acepto la <a href="/politica-privacidad" class="font-semibold text-emerald-600 hover:underline dark:text-emerald-400">Política de Privacidad</a>
+              </label>
+            </div>
+            
+            <div>
+              <button type="submit" class="w-full rounded-md bg-emerald-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-emerald-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-600">
+                Enviar Consulta
+              </button>
+            </div>
+          </form>
+        </div>
+        
+        <div class="space-y-8">
+          
+          <div class="flex items-start gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-10 w-10 flex-shrink-0 text-emerald-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Horario de Atención</h3>
+              <p class="mt-1 text-lg text-gray-600 dark:text-gray-300">Lunes a Viernes: 8:00 - 19:00</p>
+              <p class="mt-1 text-lg font-bold text-gray-600 dark:text-gray-300">Servicio de Urgencias: 24 horas, 7 días</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-10 w-10 flex-shrink-0 text-emerald-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Email de Contacto</h3>
+              <a href="mailto:tuemail@tuweb.com" class="mt-1 text-lg text-gray-600 hover:text-emerald-500 dark:text-gray-300 dark:hover:text-emerald-400">[tuemail@tuweb.com]</a>
+            </div>
+          </div>
+          
+          <div class="flex items-start gap-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-10 w-10 flex-shrink-0 text-emerald-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+            </svg>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Zona de Servicio</h3>
+              <p class="mt-1 text-lg text-gray-600 dark:text-gray-300">
+                Mi base está en Tolosa, cubro toda Donostia y alrededores.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  </Layout>
